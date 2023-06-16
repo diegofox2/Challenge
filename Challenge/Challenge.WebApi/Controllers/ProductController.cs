@@ -24,7 +24,7 @@ namespace Challenge.WebAPI.Controllers
         [HttpPost]
         public async Task Post([FromBody] Product product)
         {
-            await _productService.AddNewProduct(product);
+            await _productService.AddNewProductAsync(product);
         }
 
     }

@@ -24,7 +24,7 @@ namespace Challenge.ApplicationService.Test.Unit
             };
 
             // Act 
-            await productService.AddNewProduct(product);
+            await productService.AddNewProductAsync(product);
             
             //Assert
             productRepositoryMock.Verify(repo => repo.AddProduct(product), Times.Once);
@@ -48,7 +48,7 @@ namespace Challenge.ApplicationService.Test.Unit
             };
 
             // Act & Assert
-            await productService.AddNewProduct(product);
+            await productService.AddNewProductAsync(product);
 
         }
 
@@ -69,7 +69,7 @@ namespace Challenge.ApplicationService.Test.Unit
             };
 
             // Act & Assert
-            await productService.AddNewProduct(product);
+            await productService.AddNewProductAsync(product);
 
         }
     }

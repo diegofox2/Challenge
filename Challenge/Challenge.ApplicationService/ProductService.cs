@@ -17,7 +17,7 @@ namespace Challenge.ApplicationService
             return await _unitOfWork.ProductRepository.GetProductByID(id);
         }
 
-        public async Task AddNewProduct(Product product)
+        public async Task AddNewProductAsync(Product product)
         {
             product.Validate();
 

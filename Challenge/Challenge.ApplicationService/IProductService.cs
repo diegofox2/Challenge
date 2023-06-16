@@ -6,6 +6,6 @@ namespace Challenge.ApplicationService
     {
         Task<Product> GetProduct(int id);
 
-        Task AddNewProduct(Product product);
+        Task AddNewProductAsync(Product product);
     }
 }
