@@ -3,13 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33723.286
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Challenge.WebApi", "Challenge.WebApi\Challenge.WebApi.csproj", "{FD1E36D0-D42C-4D9C-9246-B29302BE99B9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Challenge.WebApi", "Challenge.WebApi\Challenge.WebApi.csproj", "{FD1E36D0-D42C-4D9C-9246-B29302BE99B9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Challenge.ApplicationService", "Challenge.ApplicationService\Challenge.ApplicationService.csproj", "{6213B777-43AE-4A0B-A75E-B5B4252F7286}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Challenge.ApplicationService", "Challenge.ApplicationService\Challenge.ApplicationService.csproj", "{6213B777-43AE-4A0B-A75E-B5B4252F7286}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Challenge.DataAccessLayer", "Challenge.DataAccessLayer\Challenge.DataAccessLayer.csproj", "{41E9F573-36A3-4627-9478-6B564276DC44}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Challenge.DataAccessLayer", "Challenge.DataAccessLayer\Challenge.DataAccessLayer.csproj", "{41E9F573-36A3-4627-9478-6B564276DC44}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Challenge.Domain", "Challenge.Domain\Challenge.Domain.csproj", "{993A6682-91B6-451F-B821-29E081CFD9F7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Challenge.Domain", "Challenge.Domain\Challenge.Domain.csproj", "{993A6682-91B6-451F-B821-29E081CFD9F7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{962ED41C-597F-4BA8-9424-B6112B125939}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Challenge.Domain.Test", "Challenge.Domain.Test\Challenge.Domain.Test.csproj", "{103FE4A2-B365-4982-A3BF-D9B0B5C3D47B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Challenge.ApplicationService.Test", "Challenge.ApplicationService.Test\Challenge.ApplicationService.Test.csproj", "{D5B384A6-4C3F-4DE7-AC7B-7E3A9AF24E6F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,9 +39,21 @@ Global
 		{993A6682-91B6-451F-B821-29E081CFD9F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{993A6682-91B6-451F-B821-29E081CFD9F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{993A6682-91B6-451F-B821-29E081CFD9F7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{103FE4A2-B365-4982-A3BF-D9B0B5C3D47B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{103FE4A2-B365-4982-A3BF-D9B0B5C3D47B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{103FE4A2-B365-4982-A3BF-D9B0B5C3D47B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{103FE4A2-B365-4982-A3BF-D9B0B5C3D47B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D5B384A6-4C3F-4DE7-AC7B-7E3A9AF24E6F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5B384A6-4C3F-4DE7-AC7B-7E3A9AF24E6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5B384A6-4C3F-4DE7-AC7B-7E3A9AF24E6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5B384A6-4C3F-4DE7-AC7B-7E3A9AF24E6F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{103FE4A2-B365-4982-A3BF-D9B0B5C3D47B} = {962ED41C-597F-4BA8-9424-B6112B125939}
+		{D5B384A6-4C3F-4DE7-AC7B-7E3A9AF24E6F} = {962ED41C-597F-4BA8-9424-B6112B125939}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B72C06B7-B207-4DFF-9AA1-AA39B59E4AB3}

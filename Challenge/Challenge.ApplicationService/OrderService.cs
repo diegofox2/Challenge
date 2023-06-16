@@ -12,8 +12,10 @@ namespace Challenge.ApplicationService
             _unitOfWork = unitOfWork;
         }
 
-        public async Task CreateOrder(Order order)
+        public async Task CreateOrderAsync(Order order)
         {
+            order.Validate();
+
             await _unitOfWork.OrderRepository.CreateOrder(order);
         }
 

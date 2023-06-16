@@ -16,5 +16,14 @@ namespace Challenge.ApplicationService
         {
             return await _unitOfWork.ProductRepository.GetProductByID(id);
         }
+
+        public async Task AddNewProduct(Product product)
+        {
+            product.Validate();
+
+            _unitOfWork.ProductRepository.AddProduct(product);
+            
+            await _unitOfWork.SaveChangesAsync();
+        }
     }
 }

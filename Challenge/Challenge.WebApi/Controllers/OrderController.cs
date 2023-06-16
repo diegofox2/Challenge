@@ -26,7 +26,7 @@ namespace Challenge.WebAPI.Controllers
         [HttpPost]
         public async Task Post([FromBody] Order order)
         {
-            await _orderService.CreateOrder(order);
+            await _orderService.CreateOrderAsync(order);
         }
 
     }

@@ -7,5 +7,18 @@
         public string Name { get; set; }
 
         public decimal Price { get; set; }
+
+        public void Validate()
+        {
+            if (string.IsNullOrEmpty(Name))
+            {
+                throw new ApplicationException("Product name can not be empty");
+            }
+
+            if(Price == 0)
+            {
+                throw new ApplicationException("Produc price can not be empty");
+            }
+        }
     }
 }

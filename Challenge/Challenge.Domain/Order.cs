@@ -16,12 +16,12 @@
         {
             if (Product == null)
             {
-                throw new Exception("Products are required");
+                throw new ApplicationException("Products are required");
             }
 
             if (Quantity <= 0)
             {
-                throw new Exception("Quantity is required");
+                throw new ApplicationException("Quantity is required");
             }
         }
     }

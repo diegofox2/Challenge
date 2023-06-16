@@ -5,5 +5,7 @@ namespace Challenge.DataAccessLayer.Interfaces
     public interface IProductRepository
     {
         Task<Product> GetProductByID(int id);
+
+        void AddProduct(Product product);
     }
 }

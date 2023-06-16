@@ -18,5 +18,10 @@ namespace Challenge.DataAccessLayer
             return await _dbContext.Products.FirstOrDefaultAsync(p => p.ID == id);
         }
 
+        public void AddProduct(Product product)
+        {
+            _dbContext.Products.Add(product);
+        }
+
     }
 }

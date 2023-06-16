@@ -19,9 +19,9 @@ namespace Challenge.DataAccessLayer
 
         public IProductRepository ProductRepository { get { return _productRepository; } }
 
-        public void SaveChanges()
+        public async Task SaveChangesAsync()
         {
-            _dbContext.SaveChanges();
+            await _dbContext.SaveChangesAsync();
         }
     }
 }

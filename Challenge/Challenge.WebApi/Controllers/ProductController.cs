@@ -21,5 +21,11 @@ namespace Challenge.WebAPI.Controllers
             return await _productService.GetProduct(id);
         }
 
+        [HttpPost]
+        public async Task Post([FromBody] Product product)
+        {
+            await _productService.AddNewProduct(product);
+        }
+
     }
 }

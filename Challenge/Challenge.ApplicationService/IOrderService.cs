@@ -4,7 +4,7 @@ namespace Challenge.ApplicationService
 {
     public interface IOrderService
     {
-        Task CreateOrder(Order order);
+        Task CreateOrderAsync(Order order);
         Task<Order> GetOrder(int orderId);
     }
 }
